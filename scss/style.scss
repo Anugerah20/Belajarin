@@ -1,0 +1,97 @@
+@import 'fonts';
+@import 'colors';
+@import 'mixin';
+
+// Style CSS
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../Image/Utama.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 62vmax;
+    background-position-y: 5rem;
+}
+        
+// Navbar
+
+.navbar-top{
+    .navbar-brand{
+        margin-top: -7px;
+        span{
+            color: $color-primary;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-left: 0.5em;
+            
+        }
+    }
+
+    #navbarNav{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: $color-secondry;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    margin-left: 2.2em;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover{
+                        color: lighten($color-secondry, 50%);
+                        cursor: pointer;
+                    }
+                }
+                .button-sign-up{
+                    @include button();
+                }
+            }
+        }
+    }
+}
+
+// Home Page
+.home-page {
+    margin-top: 9em;
+    h1{
+        font-weight: 700;
+        font-size: 4rem;
+        color: $color-primary;
+        white-space: nowrap;
+        line-height: 1;
+    }
+    h2{
+        font-weight: 500;
+        font-size: 3rem;
+        color: $color-primary;
+        white-space: nowrap;
+        line-height: 1;
+    }
+    p{
+        color: $color-secondry;
+        font-size: 1rem;
+        margin-top: 2em;
+    }
+
+    .btn-started{
+        margin-top: 1em;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid transparent;
+        @include button();
+
+        &:hover{
+            color: $color-primary;
+            border: 1px solid $color-primary;
+            background: transparent;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin-top: 3em;
+            text-align: center;
+        }
+
+        .btn-started{
+            margin-top: 3em;
+        }
+
+    }
+}

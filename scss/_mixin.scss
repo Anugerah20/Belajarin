@@ -1,0 +1,10 @@
+// Mixin button
+@mixin button {
+    display: inline-block;
+    background: $color-primary;
+    color: $color-text;
+    border-radius: 2em;
+    border: none;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+}

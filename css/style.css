@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../Image/Utama.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 62vmax;
+  background-position-y: 5rem;
+}
+
+.navbar-top .navbar-brand {
+  margin-top: -7px;
+}
+
+.navbar-top .navbar-brand span {
+  color: #E72641;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 0.5em;
+}
+
+.navbar-top #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #213253;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 2.2em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-top #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #9cb0d7;
+  cursor: pointer;
+}
+
+.navbar-top #navbarNav .navbar-nav .nav-item .button-sign-up {
+  display: inline-block;
+  background: #E72641;
+  color: #fff;
+  border-radius: 2em;
+  border: none;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+}
+
+.home-page {
+  margin-top: 9em;
+}
+
+.home-page h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #E72641;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.home-page h2 {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #E72641;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.home-page p {
+  color: #213253;
+  font-size: 1rem;
+  margin-top: 2em;
+}
+
+.home-page .btn-started {
+  margin-top: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+  display: inline-block;
+  background: #E72641;
+  color: #fff;
+  border-radius: 2em;
+  border: none;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+}
+
+.home-page .btn-started:hover {
+  color: #E72641;
+  border: 1px solid #E72641;
+  background: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .home-page .btn-started {
+    margin-top: 3em;
+    text-align: center;
+  }
+}
+
+.home-page .btn-started .btn-started {
+  margin-top: 3em;
+}
+/*# sourceMappingURL=style.css.map */
